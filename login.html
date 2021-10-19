@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./css/common_header.css">
+  <link rel="stylesheet" href="./css/inputForm.css">
+  <style>
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    window.onload = function() {
+      document.getElementById('submit').onclick = function() {
+        var id = document.getElementById('id');
+        var pw = document.getElementById('pw');
+
+        if(id.value == "") {
+          alert("아이디를 입력해주세요.");
+          id.focus();
+          return;
+        }
+        if(pw.value == "") {
+          alert("비밀번호를 입력해주세요.");
+          pw.focus();
+          return;
+        }
+        location.href = "index.html";
+      }
+    }
+  </script>
+</head>
+  <style>
+      .wrapper {
+        min-height: 100%;
+      }
+      .wrapper .container {
+        text-align: center;
+      }
+      .container > h1 {
+        margin-top: 150px;
+      }
+
+      #submit {
+        margin-bottom: 200px;
+      }
+
+  </style>
+<body>
+  <div id="top"></div>
+
+  <header>
+    <div class="nav_container">
+      <div class="first">
+        <a href="register_rev2.html">회원가입  </a>
+        <a href="login.html">로그인</a>
+      </div>
+      <div class="second">
+        <a href="index.html" id="logo">TVING</a>
+        <a href="#" class="nav">실시간</a>
+        <a href="#" class="nav">영화</a>
+        <a href="#" class="nav">티빙몰</a>
+      </div>
+    </div>
+  </header>
+    <div class="wrapper">
+      <form class="frm" action="index.html" method="post">
+        <div class="container">
+          <h1>로그인</h1>
+          <input id="id" type="text" name="" value="" placeholder=" 아이디"><br>
+          <input id="pw" type="text" name="" value="" placeholder=" 비밀번호"><br>
+          <label for="check">
+            <input id="check" type="checkbox" name="check" value=""> 로그인 정보 저장
+          </label>
+          <div id="submit">로그인</div>
+
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <p>대표이사 : YANG JIEUL 사업자정보확인 개인정보관리책임자 : 고창남 사업자등록번호 : 188-88-01893 통신판매신고번호 : 2020-서울마포-3641호</p>
+        <p>고객문의 바로가기 대표메일 : tving@cj.net 티빙몰 문의 : tving.mall@cj.net 고객센터 : 1670-1525(평일 09시~18시</p>
+        <p>사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동) 호스팅사업자 : 씨제이올리브네트웍스(주)</p>
+        <p>ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780 Mnet 고객센터(방송편성문의) : 1855-1631</p>
+<br>
+        <p>Copyright © 주식회사 티빙 All right reserved.</p>
+      </div>
+      <div class="above">
+        <a href="#top">⬆</a>
+      </div>
+    </footer>
+
+</body>
+</html>
+
+  </body>
+</html>
